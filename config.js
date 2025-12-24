@@ -1,0 +1,5 @@
+import dotenv from "dotenv";
+dotenv.config();
+
+export const GOOGLE_MAPS_API_KEY = process.env.GOOGLE_MAPS_API_KEY;
+export const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL;

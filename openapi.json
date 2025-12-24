@@ -1,0 +1,36 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Places Finder API",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/chat": {
+            "post": {
+                "summary": "Find places using LLM + Google Maps",
+                "operationId": "find_places_with_map",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "prompt": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": ["prompt"]
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "LLM response with places"
+                    }
+                }
+            }
+        }
+    }
+}
