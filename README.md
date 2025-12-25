@@ -54,3 +54,9 @@ ollama serve
 ## Postman Collection
 
 -   maps-llm-backend.postman_collection.json
+
+## Screenshot
+
+![Postman](https://raw.githubusercontent.com/maldiq/maps-llm-backend/refs/heads/main/Screenshot%202025-12-25%20005828.png)
+
+![WebUI](https://raw.githubusercontent.com/maldiq/maps-llm-backend/refs/heads/main/Screenshot%202025-12-25%20010019.png)
