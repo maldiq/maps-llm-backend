@@ -9,10 +9,10 @@ export async function askLLM(prompt) {
                 model: "llama3",
                 prompt: prompt,
                 stream: false,
-            },
-            {
-                timeout: 180000, // 3 minutes, MANDATORY
             }
+            // {
+            //     timeout: 180000, // 3 minutes, MANDATORY
+            // }
         );
 
         return response.data.response;
@@ -25,6 +25,6 @@ export async function askLLM(prompt) {
         } else {
             console.error(error.message);
         }
-        throw err;
+        throw error;
     }
 }
