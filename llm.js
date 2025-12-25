@@ -23,7 +23,7 @@ export async function askLLM(prompt) {
             console.error(error.response.status);
             console.error(error.response.data);
         } else {
-            console.error(err.message);
+            console.error(error.message);
         }
         throw err;
     }
